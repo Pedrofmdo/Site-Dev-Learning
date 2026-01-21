@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLearning - Cursos e Roteiros para Programadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>Dev<span>Learning</span></h1>
+            </div>
+            
+            <!-- Menu Principal -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a></li>
+                <li><a href="#roteiros"><i class="fas fa-road"></i> Roteiros de Estudos</a></li>
+                <li><a href="#outros"><i class="fas fa-box"></i> Outros</a></li>
+                <li><a href="#promocoes" class="promo-badge"><i class="fas fa-tag"></i> Promoções!</a></li>
+                <li><a href="#duvidas"><i class="fas fa-question-circle"></i> Dúvidas</a></li>
+            </ul>
+            
+            <!-- Menu Mobile -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <!-- Seção Hero -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Domine a Programação do Zero ao Avançado</h2>
+                    <p class="hero-subtitle">Cursos, ebooks e roteiros de estudo criados por desenvolvedores para acelerar sua carreira em tecnologia</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Alunos Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Cursos Disponíveis</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Acesso Ilimitado</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#cursos" class="btn-primary">
+                        <i class="fas fa-rocket"></i> Ver Cursos Disponíveis
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-buttons">
+                                <span class="close"></span>
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                            </div>
+                            <span class="window-title">terminal</span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="comment">// Seu sucesso começa aqui</span>
+<span class="keyword">const</span> <span class="variable">carreiraTech</span> = {
+    <span class="property">nivel</span>: <span class="string">'iniciante → avançado'</span>,
+    <span class="property">metodologia</span>: <span class="string">'prática e objetiva'</span>,
+    <span class="property">resultado</span>: <span class="string">'emprego garantido'</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Cursos -->
+        <section id="cursos" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i> Nossos Cursos
+                </h2>
+                <p class="section-subtitle">Escolha seu caminho na programação</p>
+                
+                <div class="cursos-grid">
+                    <!-- Curso 1 -->
+                    <div class="curso-card">
+                        <div class="curso-badge hot">🔥 MAIS VENDIDO</div>
+                        <div class="curso-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3 class="curso-title">JavaScript Moderno ES6+</h3>
+                        <p class="curso-desc">Domine a linguagem mais popular do mercado com projetos reais</p>
+                        <div class="curso-info">
+                            <span><i class="fas fa-clock"></i> 40 horas</span>
+                            <span><i class="fas fa-video"></i> 120 aulas</span>
+                        </div>
+                        <div class="curso-price">
+                            <span class="old-price">R$ 297,00</span>
+                            <span class="current-price">R$ 147,00</span>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Quero%20comprar%20o%20curso%20JavaScript%20Moderno" 
+                           target="_blank" 
+                           class="btn-curso">
+                            <i class="fab fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                    
+                    <!-- Curso 2 -->
+                    <div class="curso-card">
+                        <div class="curso-badge new">🆕 NOVO</div>
+                        <div class="curso-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="curso-title">Python para Data Science</h3>
+                        <p class="curso-desc">Análise de dados, machine learning e automação</p>
+                        <div class="curso-info">
+                            <span><i class="fas fa-clock"></i> 60 horas</span>
+                            <span><i class="fas fa-video"></i> 150 aulas</span>
+                        </div>
+                        <div class="curso-price">
+                            <span class="old-price">R$ 397,00</span>
+                            <span class="current-price">R$ 197,00</span>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Quero%20comprar%20o%20curso%20Python%20Data%20Science" 
+                           target="_blank" 
+                           class="btn-curso">
+                            <i class="fab fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                    
+                    <!-- Curso 3 -->
+                    <div class="curso-card">
+                        <div class="curso-badge promo">💎 PROMO</div>
+                        <div class="curso-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="curso-title">React Native Mobile</h3>
+                        <p class="curso-desc">Crie apps iOS e Android com JavaScript</p>
+                        <div class="curso-info">
+                            <span><i class="fas fa-clock"></i> 50 horas</span>
+                            <span><i class="fas fa-video"></i> 130 aulas</span>
+                        </div>
+                        <div class="curso-price">
+                            <span class="old-price">R$ 347,00</span>
+                            <span class="current-price">R$ 177,00</span>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Quero%20comprar%20o%20curso%20React%20Native" 
+                           target="_blank" 
+                           class="btn-curso">
+                            <i class="fab fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Roteiros de Estudo -->
+        <section id="roteiros" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-road"></i> Roteiros de Estudos
+                </h2>
+                <p class="section-subtitle">Caminhos estruturados para seu aprendizado</p>
+                
+                <div class="roteiros-container">
+                    <div class="roteiro-card">
+                        <div class="roteiro-header">
+                            <h3>🚀 Frontend Developer</h3>
+                            <span class="roteiro-time">6 meses</span>
+                        </div>
+                        <ul class="roteiro-list">
+                            <li><i class="fas fa-check-circle"></i> HTML5 & CSS3 Avançado</li>
+                            <li><i class="fas fa-check-circle"></i> JavaScript ES6+</li>
+                            <li><i class="fas fa-check-circle"></i> React.js & Redux</li>
+                            <li><i class="fas fa-check-circle"></i> TypeScript</li>
+                            <li><i class="fas fa-check-circle"></i> Next.js</li>
+                        </ul>
+                        <div class="roteiro-price">
+                            <span>R$ 97,00</span>
+                            <small>Ebook + Planilha + Comunidade</small>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Quero%20o%20roteiro%20Frontend%20Developer" 
+                           target="_blank" 
+                           class="btn-roteiro">
+                            <i class="fas fa-shopping-cart"></i> Comprar Roteiro
+                        </a>
+                    </div>
+                    
+                    <div class="roteiro-card featured">
+                        <div class="roteiro-badge">✨ RECOMENDADO</div>
+                        <div class="roteiro-header">
+                            <h3>💻 Full Stack Developer</h3>
+                            <span class="roteiro-time">9 meses</span>
+                        </div>
+                        <ul class="roteiro-list">
+                            <li><i class="fas fa-check-circle"></i> Frontend Completo</li>
+                            <li><i class="fas fa-check-circle"></i> Node.js & Express</li>
+                            <li><i class="fas fa-check-circle"></i> Banco de Dados SQL/NoSQL</li>
+                            <li><i class="fas fa-check-circle"></i> Docker & DevOps</li>
+                            <li><i class="fas fa-check-circle"></i> AWS & Deploy</li>
+                        </ul>
+                        <div class="roteiro-price">
+                            <span>R$ 147,00</span>
+                            <small>Ebook + Planilha + Comunidade</small>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Quero%20o%20roteiro%20Full%20Stack%20Developer" 
+                           target="_blank" 
+                           class="btn-roteiro">
+                            <i class="fas fa-shopping-cart"></i> Comprar Roteiro
+                        </a>
+                    </div>
+                    
+                    <div class="roteiro-card">
+                        <div class="roteiro-header">
+                            <h3>🤖 Backend Specialist</h3>
+                            <span class="roteiro-time">7 meses</span>
+                        </div>
+                        <ul class="roteiro-list">
+                            <li><i class="fas fa-check-circle"></i> Java Spring Boot</li>
+                            <li><i class="fas fa-check-circle"></i> Python Django</li>
+                            <li><i class="fas fa-check-circle"></i> APIs REST & GraphQL</li>
+                            <li><i class="fas fa-check-circle"></i> Microserviços</li>
+                            <li><i class="fas fa-check-circle"></i> Segurança & Performance</li>
+                        </ul>
+                        <div class="roteiro-price">
+                            <span>R$ 127,00</span>
+                            <small>Ebook + Planilha + Comunidade</small>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Quero%20o%20roteiro%20Backend%20Specialist" 
+                           target="_blank" 
+                           class="btn-roteiro">
+                            <i class="fas fa-shopping-cart"></i> Comprar Roteiro
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Outros Produtos -->
+        <section id="outros" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-box"></i> Outros Produtos
+                </h2>
+                
+                <div class="outros-grid">
+                    <div class="outro-card">
+                        <i class="fas fa-book outro-icon"></i>
+                        <h3>Ebooks Avançados</h3>
+                        <p>Guias detalhados sobre tecnologias específicas</p>
+                        <span class="outro-price">A partir de R$ 47,00</span>
+                    </div>
+                    
+                    <div class="outro-card">
+                        <i class="fas fa-project-diagram outro-icon"></i>
+                        <h3>Projetos Práticos</h3>
+                        <p>Código-fonte completo de aplicações reais</p>
+                        <span class="outro-price">A partir de R$ 67,00</span>
+                    </div>
+                    
+                    <div class="outro-card">
+                        <i class="fas fa-certificate outro-icon"></i>
+                        <h3>Certificações</h3>
+                        <p>Preparação para certificações internacionais</p>
+                        <span class="outro-price">A partir de R$ 87,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Promoções -->
+        <section id="promocoes" class="section promo-section">
+            <div class="container">
+                <div class="promo-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-tag"></i> PROMOÇÕES!
+                    </h2>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span id="hours">24</span>
+                            <small>Horas</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">60</span>
+                            <small>Minutos</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">60</span>
+                            <small>Segundos</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-content">
+                        <h3>🔥 PACOTE COMPLETO DEV</h3>
+                        <p class="promo-subtitle">Todos os cursos + roteiros + suporte vitalício</p>
+                        
+                        <div class="promo-price">
+                            <div class="original-price">
+                                <span>Valor Total:</span>
+                                <del>R$ 1.497,00</del>
+                            </div>
+                            <div class="promo-offer">
+                                <span>HOJE POR APENAS:</span>
+                                <div class="promo-value">R$ 497,00</div>
+                            </div>
+                            <div class="economy">
+                                <i class="fas fa-piggy-bank"></i>
+                                <span>Você economiza R$ 1.000,00</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="promo-benefits">
+                            <li><i class="fas fa-check"></i> Acesso a TODOS os cursos</li>
+                            <li><i class="fas fa-check"></i> Todos os roteiros de estudo</li>
+                            <li><i class="fas fa-check"></i> Comunidade exclusiva</li>
+                            <li><i class="fas fa-check"></i> Suporte individualizado</li>
+                            <li><i class="fas fa-check"></i> Certificados oficiais</li>
+                        </ul>
+                        
+                        <a href="https://wa.me/5511999999999?text=Quero%20o%20PACOTE%20COMPLETO%20DEV" 
+                           target="_blank" 
+                           class="btn-promo">
+                            <i class="fas fa-bolt"></i> GARANTIR PROMOÇÃO
+                        </a>
+                        
+                        <p class="promo-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Oferta válida apenas para as próximas 24 horas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Dúvidas -->
+        <section id="duvidas" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-question-circle"></i> Dúvidas Frequentes
+                </h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como recebo acesso aos cursos?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O acesso é liberado instantaneamente após a confirmação do pagamento. Você recebe login e senha por e-mail em até 5 minutos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Por quanto tempo tenho acesso?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Acesso vitalício! Todos os cursos e materiais são seus para sempre, incluindo atualizações futuras.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Tem garantia?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Garantia incondicional de 7 dias. Se não gostar, devolvemos 100% do seu dinheiro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como funciona o suporte?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos suporte por comunidade exclusiva no Discord e atendimento individual por email.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-final">
+                    <h3>Pronto para acelerar sua carreira?</h3>
+                    <p>Junte-se a mais de 500 desenvolvedores que já transformaram suas carreiras</p>
+                    <a href="#cursos" class="btn-primary">
+                        <i class="fas fa-rocket"></i> Começar Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <h2>Dev<span>Learning</span></h2>
+                    <p>Cursos e materiais para desenvolvedores</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <a href="#cursos">Cursos</a>
+                    <a href="#roteiros">Roteiros</a>
+                    <a href="#promocoes">Promoções</a>
+                    <a href="#duvidas">Dúvidas</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@devlearning.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 DevLearning. Todos os direitos reservados.</p>
+                <p>Site desenvolvido para venda de cursos e ebooks de programação</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20nos%20cursos%20de%20programação" 
+       target="_blank" 
+       class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
